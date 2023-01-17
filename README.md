@@ -1,24 +1,25 @@
-# README
+# pdf-to-csv
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
 
-Things you may want to cover:
+PDFファイルの内容をCSVへ書き出すためのアプリケーションです。
 
-* Ruby version
+Rails version: 7.0.4.1  
+Ruby version: 3.1.2p20
 
-* System dependencies
+## 制作経緯
 
-* Configuration
+Webサイトのフロントコーディングを行う際に、テンプレートエンジンで配列ループを行うことが多々ある。
 
-* Database creation
+1. XD等のデザインファイルからテキストを抽出(XDのままではテキストコピーがしづらいため、PDF変換を行う場合も有る)
+2. 抽出したテキストをスプレッドシートに貼り付ける
+3. 関数を用いて配列のフォーマットに合わせる
 
-* Database initialization
+配列の作成には主に上記の手順を用いるのだが、コンテンツ量によっては1,2の工程に時間がかかってしまう。  
+上記問題の解消をしたいと思い、制作に至る。
 
-* How to run the test suite
+## 機能※随時更新
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- PDFのアップロード
+- PDFをCSVへ変換
+- CSVのダウンロード
