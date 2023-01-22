@@ -37,7 +37,7 @@ class PdfsController < ApplicationController
 
       puts "----- ファイル名 -----"
       p @file_name
-      puts "----- /upload -----"
+      puts "----- /ファイル名 -----"
 
       # TODO: showへリダイレクトさせる
 
