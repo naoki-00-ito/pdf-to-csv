@@ -1,0 +1,12 @@
+h1.p-ttl PDFをアップロードする
+
+= form_with model: @pdf, class: 'p-form' do |form|
+
+  - if !@error_message.nil?
+    p.p-error 
+      = @error_message
+    
+  .p-form__item
+    = form.file_field :upload_pdf, accept: '.pdf', class: 'p-form__file'
+
+  = form.submit 'アップロード', class: 'p-form__btn'
